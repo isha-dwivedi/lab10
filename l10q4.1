@@ -1,0 +1,31 @@
+*Using the program point.cpp, add a member function print to the class
+Point so that it prints out coordinates as: 
+	(2, 3)
+for a point with coordinates (2, 3). Test it in main().*/
+
+#include<iostream>
+using namespace std;
+class point //declaring the  class
+{	
+	public:
+	
+	int print(int cor); //member function that prints coordinates
+};
+	int point::print(int cor) { 
+	
+	return cor;
+	}
+
+	
+int main()
+{ 
+  point px; //for x coordinate
+  point py; //for y coordinate
+  int xcor,ycor;
+  xcor=px.print(2);
+  ycor=py.print(3);
+  cout<<"("<<xcor<<","<<ycor<<")";
+  
+}
+  
+  
